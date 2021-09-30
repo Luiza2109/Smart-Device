@@ -1,0 +1,71 @@
+.user-info {
+  @include same-list;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 430px;
+  margin-left: auto;
+}
+
+.user-info__item a {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+  color: $bg-white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.user-info__item svg {
+  margin-right: 18px;
+}
+
+.user-info__item a:hover span {
+  color: #00b2ff;
+  transition: all 0.3s ease;
+}
+
+.user-info__item a:hover svg {
+  fill: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.user-info__item a:active span {
+  opacity: 0.7;
+}
+
+.user-info__item a:active svg {
+  opacity: 0.7;
+}
+
+@media (max-width: $tablet-width) {
+  .user-info {
+    width: 82px;
+  }
+
+  .user-info__item svg {
+    margin-right: 0;
+  }
+
+  .user-info__item--email svg {
+    width: 26px;
+    height: 19px;
+  }
+
+  .user-info__item--call svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .user-info__item span {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .user-info {
+    width: 71px;
+    padding-bottom: 4px;
+  }
+}
