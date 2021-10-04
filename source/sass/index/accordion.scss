@@ -1,0 +1,36 @@
+.accordion__btn {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .accordion {
+    position: relative;
+    overflow-anchor: none;
+  }
+
+  .accordion__btn {
+    @include btn-reset;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 29px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .accordion__btn--open {
+    background-image: url("../../img/minus.svg");
+  }
+
+  .accordion--closed .accordion__hidden {
+    display: none;
+  }
+
+  .accordion--opened .accordion__hidden{
+    display: block;
+  }
+}

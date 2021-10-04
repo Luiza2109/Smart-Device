@@ -1,0 +1,129 @@
+.page-footer {
+  overflow: hidden;
+}
+
+.page-footer__container {
+  padding-top: 65px;
+}
+
+.page-footer__info {
+  margin-right: 14.6%;
+}
+
+.page-footer__sd {
+  display: none;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 15px;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.page-footer__sd--bottom {
+  display: block;
+  padding: 0;
+}
+
+.page-footer__logo {
+  flex-shrink: 0;
+  margin-bottom: 55px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  padding-bottom: 57px;
+}
+
+.page-footer__wrapper-site {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__info {
+    position: relative;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      left: 50%;
+      margin-left: -50vw;
+      bottom: 0;
+      background-color: rgba(98, 105, 98, 0.2);
+    }
+  }
+
+  .page-footer__container {
+    padding-top: 18px;
+  }
+
+  .page-footer__sd {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    display: block;
+    margin: 0;
+    padding-bottom: 34px;
+  }
+
+  .page-footer__wrapper-site {
+    padding-top: 40px;
+  }
+
+  .page-footer__social {
+    padding-top: 5px;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__wrapper-site {
+    display: block;
+    padding-top: 0;
+  }
+
+  .page-footer__wrapper {
+    padding-bottom: 23px;
+  }
+
+  .page-footer__container {
+    padding-top: 47px;
+    padding-bottom: 25px;
+  }
+
+  .page-footer__logo {
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+
+  .page-footer__sd {
+    padding: 0;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .page-footer__info {
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 47px;
+  }
+
+  .page-footer__info .page-footer__social {
+    padding: 0;
+    margin: 0 auto;
+  }
+}

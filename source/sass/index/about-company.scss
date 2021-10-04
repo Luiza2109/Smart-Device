@@ -1,0 +1,128 @@
+.about-company {
+  position: relative;
+  padding-left: 220px;
+  padding-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 317px;
+    height: 317px;
+    top: 5px;
+    left: 11px;
+    background-image: url("../../img/2005@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.about-company__title {
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50.63px;
+}
+
+.about-company__wrapper-text {
+  padding-right: 1%;
+  margin-bottom: 37px;
+}
+
+
+.about-company__description {
+  margin: 0;
+
+  &:first-child {
+    margin-bottom: 23px;
+  }
+}
+
+.about-company__description-change {
+  display: none;
+}
+
+.about-company__btn {
+  padding: 11px 50px;
+  color: $dodger-blue;
+  border-color: $dodger-blue;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $dodger-blue;
+    color: $bg-white;
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-company {
+    padding-left: 211px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 361px;
+      height: 361px;
+      top: 0;
+      left: -9px;
+      background-image: url("../../img/2005@1x.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .about-company__wrapper-text {
+    padding-right: 0;
+  }
+
+  .about-company__title {
+    margin-bottom: 27px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about-company__wrapper-text {
+    min-height: 190px;
+    margin-bottom: 41px;
+    overflow: hidden;
+  }
+
+  .about-company__description-change {
+    display: inline;
+  }
+
+  .about-company__description-hide {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-company {
+    padding-left: 5.2%;
+    padding-right: 4.8%;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .about-company__title {
+    margin-bottom: 23px;
+    font-size: 28px;
+    line-height: 39.38px;
+  }
+
+  .about-company__description:first-child {
+    margin-bottom: 42px;
+  }
+
+  .about-company__wrapper-text {
+    margin-bottom: 31px;
+  }
+}

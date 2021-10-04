@@ -1,0 +1,35 @@
+.page-main__main-screen {
+  margin-bottom: 111px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.page-main__advantage {
+  margin-bottom: 77px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.page-main__about-company {
+  margin-bottom: 70px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 24px;
+  }
+}

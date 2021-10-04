@@ -1,0 +1,20 @@
+.social {
+  @include same-list;
+  display: flex;
+  flex-wrap: wrap;
+  width: 120px;
+}
+
+.social__item {
+  margin-right: 15px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .social {
+    width: 111px;
+  }
+}

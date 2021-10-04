@@ -1,0 +1,242 @@
+.feedback {
+  background-color: $dodger-blue;
+}
+
+.feedback__wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-top: 92px;
+  padding-bottom: 112px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 511px;
+    height: 288px;
+    right: 57.8%;
+    top: 160px;
+    background-image: url("../../img/airplane@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.feedback__wrapper-text {
+  width: 49%;
+  min-width: 545px;
+}
+
+.feedback__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: $bg-white;
+  line-height: 50.63px;
+}
+
+.feedback__description {
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 50px;
+  color: $bg-white;
+}
+
+.feedback__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback__form input {
+  width: 47.5%;
+  padding: 14px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $bg-white;
+  border: 1px solid transparent;
+
+  &:focus {
+    border-color: $bg-white;
+    outline: none;
+  }
+
+  &:hover {
+    border-color: $bg-white
+  }
+}
+
+.feedback__form input::placeholder {
+  color: $bg-white;
+}
+
+.feedback__form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 41px;
+  margin-bottom: 43px;
+  min-height: 154px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $bg-white;
+  border: 1px solid transparent;
+
+  &:focus {
+    border-color: $bg-white;
+    outline: none;
+  }
+
+  &:hover {
+    border-color: $bg-white
+  }
+}
+
+.feedback__btn {
+  padding: 14px 82px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.feedback__filter-personal {
+  width: 46%;
+  padding-left: 33px;
+}
+
+.feedback__filter-personal label {
+  position: relative;
+  display: block;
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 15.68px;
+  color: $bg-white;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -30px;
+  top: 8px;
+
+  border: 1px solid $bg-white;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: -26px;
+
+  width: 10px;
+  height: 6px;
+
+  background-image: url("../../img/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (max-width: $tablet-width) {
+  .feedback__wrapper {
+    display: block;
+    padding: 78px 10.9% 104px 11.5%;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .feedback__wrapper-text {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .feedback__title {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 50.63px;
+  }
+
+  .feedback__description {
+    margin-bottom: 54px;
+  }
+
+  .feedback__form {
+    padding-left: 4px;
+  }
+
+  .feedback__form textarea {
+    margin-top: 43px;
+    margin-bottom: 46px;
+    min-height: 159px;
+  }
+
+  .feedback__btn {
+    padding: 14px 85px;
+  }
+
+  .feedback__filter-personal label {
+    padding-top: 7px;
+  }
+
+  .feedback__filter-personal {
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .feedback__wrapper {
+    padding: 29px 5.2% 41px 5.2%;
+  }
+
+  .feedback__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 39.38px;
+  }
+
+  .feedback__description {
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .feedback__form {
+    padding-left: 0;
+  }
+
+  .feedback__form input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 16px 16px;
+  }
+
+  .feedback__form textarea {
+    margin-top: 0;
+    margin-bottom: 30px;
+    min-height: 104px;
+  }
+
+  .feedback__btn {
+    padding: 14px 88px;
+    margin-bottom: 25px;
+  }
+
+  .feedback__filter-personal {
+    width: 86%;
+    padding-left: 29px;
+  }
+}

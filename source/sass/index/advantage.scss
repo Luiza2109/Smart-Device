@@ -1,0 +1,97 @@
+.advantage__list {
+  @include same-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage__item {
+  width: 48.7%;
+  min-height: 299px;
+  padding: 20px 3.8%;
+  padding-top: 96px;
+  margin-right: 2.5%;
+  margin-bottom: 30px;
+
+  outline: 1px solid red;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.advantage__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: $dodger-blue;
+  line-height: 33.75px;
+}
+
+.advantage__description {
+  margin: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .advantage__item {
+    width: 47.9%;
+    min-height: 232px;
+    margin-right: 4.2%;
+    padding: 22px 3%;
+    padding-left: 3.6%;
+    padding-top: 66px;
+  }
+
+  .advantage__title {
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantage {
+    padding-left: 4.4%;
+  }
+
+  .advantage__list {
+    flex-direction: column;
+  }
+
+  .advantage__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 20px 5.5%;
+    padding-left: 8.3%;
+    padding-top: 72px;
+  }
+
+  .advantage__title {
+    font-size: 20px;
+    line-height: 28.13px;
+  }
+
+  .advantage__item--timing,
+  .advantage__item--supplier {
+    min-height: 310px;
+  }
+
+  .advantage__item--price {
+    min-height: 244px;
+    padding-top: 68px;
+  }
+
+  .advantage__item--supplier {
+    padding-right: 5.4%;
+    padding-top: 68px;
+  }
+
+  .advantage__item--confidentiality {
+    padding-top: 62px;
+  }
+
+  .advantage__item--confidentiality .advantage__title,
+  .advantage__item--price .advantage__title {
+    margin-bottom: 18px;
+  }
+}
