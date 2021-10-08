@@ -6,6 +6,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .content-box-component {
@@ -65,4 +66,13 @@ img {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-open {
+  max-height: 100vh;
+  overflow: hidden;
 }

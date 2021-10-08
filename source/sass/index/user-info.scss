@@ -21,21 +21,21 @@
   margin-right: 18px;
 }
 
-.user-info__item a:hover span {
+.user-info__icon:hover span {
   color: #00b2ff;
   transition: all 0.3s ease;
 }
 
-.user-info__item a:hover svg {
-  fill: #ffffff;
+.user-info__icon:hover svg {
+  fill: $bg-white;
   transition: all 0.3s ease;
 }
 
-.user-info__item a:active span {
+.user-info__icon:active span {
   opacity: 0.7;
 }
 
-.user-info__item a:active svg {
+.user-info__icon:active svg {
   opacity: 0.7;
 }
 

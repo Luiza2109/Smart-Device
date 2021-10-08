@@ -13,6 +13,11 @@
     background-image: url("../../img/2005@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media(min-resolution: 1.5dppx),
+          (min-resolution: 144dpi) {
+      background-image: url("../../img/2005@2x.png");
+    }
   }
 }
 
@@ -44,6 +49,8 @@
 }
 
 .about-company__btn {
+  position: relative;
+  z-index: 100;
   padding: 11px 50px;
   color: $dodger-blue;
   border-color: $dodger-blue;
@@ -119,7 +126,7 @@
   }
 
   .about-company__description:first-child {
-    margin-bottom: 42px;
+    margin-bottom: 47px;
   }
 
   .about-company__wrapper-text {

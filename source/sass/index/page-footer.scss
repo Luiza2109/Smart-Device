@@ -1,9 +1,5 @@
-.page-footer {
-  overflow: hidden;
-}
-
 .page-footer__container {
-  padding-top: 65px;
+  padding-top: 67px;
 }
 
 .page-footer__info {
@@ -125,5 +121,13 @@
   .page-footer__info .page-footer__social {
     padding: 0;
     margin: 0 auto;
+  }
+
+  .page-footer--nojs-accordion .accordion__btn {
+    background-image: none;
+  }
+
+  .page-footer--nojs-accordion .accordion__hidden {
+    display: block;
   }
 }

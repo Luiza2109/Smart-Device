@@ -1,3 +1,21 @@
+.advantage {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 150%;
+    height: 1100px;
+    top: -70px;
+    right: -25%;
+    background-image: url("../../img/triangle-page.svg");
+    background-repeat: no-repeat;
+    background-position: -21px 0;
+  }
+}
+
 .advantage__list {
   @include same-list;
   display: flex;
@@ -5,18 +23,42 @@
 }
 
 .advantage__item {
+  position: relative;
   width: 48.7%;
   min-height: 299px;
-  padding: 20px 3.8%;
+  padding: 18px 3.7%;
   padding-top: 96px;
   margin-right: 2.5%;
   margin-bottom: 30px;
+  border: 1px solid #ebebeb;
+  transition: all 0.3s ease;
+  background-color: $bg-white;
+  cursor: pointer;
 
-  outline: 1px solid red;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $dodger-blue;
+  }
 
   &:nth-child(2n) {
     margin-right: 0;
   }
+
+  &:hover {
+    color: $bg-white;
+    background-color: $dodger-blue;
+  }
+}
+
+.advantage__item svg {
+  position: absolute;
+  top: 40px;
+  fill: $dodger-blue;
 }
 
 .advantage__title {
@@ -29,16 +71,36 @@
   line-height: 33.75px;
 }
 
+.advantage__item:hover .advantage__title {
+  transition: all 0.3s ease;
+  color: $bg-white;
+}
+
+.advantage__item:hover svg {
+  transition: all 0.3s ease;
+  fill: $bg-white;
+}
+
 .advantage__description {
   margin: 0;
 }
 
 @media (max-width: $tablet-width) {
+  .advantage::before {
+    width: 50%;
+    height: 700px;
+    top: 100px;
+    right: 0;
+    background-image: url("../../img/triangle-page-lap.svg");
+    background-position: -125px 93px;
+  }
+
   .advantage__item {
     width: 47.9%;
     min-height: 232px;
     margin-right: 4.2%;
-    padding: 22px 3%;
+    margin-bottom: 28px;
+    padding: 26px 2.9%;
     padding-left: 3.6%;
     padding-top: 66px;
   }
@@ -46,11 +108,24 @@
   .advantage__title {
     margin-bottom: 11px;
   }
+
+  .advantage__item svg {
+    top: 21px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .advantage {
     padding-left: 4.4%;
+
+    &::before {
+      width: 50%;
+      height: 700px;
+      top: 650px;
+      right: 0;
+      background-image: url("../../img/triangle-page-lap.svg");
+      background-position: -240px 123px;
+    }
   }
 
   .advantage__list {
@@ -61,7 +136,7 @@
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
-    padding: 20px 5.5%;
+    padding: 18px 5.3%;
     padding-left: 8.3%;
     padding-top: 72px;
   }
@@ -82,7 +157,7 @@
   }
 
   .advantage__item--supplier {
-    padding-right: 5.4%;
+    padding-right: 4.6%;
     padding-top: 68px;
   }
 

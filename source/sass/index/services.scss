@@ -10,33 +10,17 @@
 
 .services__text {
   padding-top: 90px;
-  padding-bottom: 121px;
+  padding-bottom: 128px;
 }
 
 .services__item {
-  position: relative;
   width: 31.8%;
-  min-height: 620px;
   margin-right: 2.3%;
-  overflow: hidden;
+  height: 620px;
+
 
   &:nth-child(3n) {
     margin-right: 0;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 10;
-    width: 63px;
-    height: 63px;
-    right: 2px;
-    bottom: 6px;
-    background-color: $dodger-blue;
-    background-image: url("../../img/right-arrowr.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 6px 9px;
   }
 }
 
@@ -51,13 +35,32 @@
 }
 
 .services__link {
+  position: relative;
   display: block;
-  width: 370px;
-  min-height: 620px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $gable-green;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 63px;
+    height: 63px;
+    right: 0;
+    bottom: 0;
+    background-color: $dodger-blue;
+    background-image: url("../../img/right-arrowr.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .services__img {
   opacity: 0.2;
+  height: 100%;
+  object-fit: cover;
 }
 
 .services__link:hover .services__img {
@@ -86,9 +89,9 @@
 
   .services__item {
     width: 100%;
-    min-height: 256px;
+    height: 256px;
     margin-right: 0;
-    margin-bottom: 39px;
+    margin-bottom: 47px;
 
     &::before {
       right: 0;
@@ -111,9 +114,13 @@
     width: 24%;
   }
 
+  .services__title--component {
+    top: 52px;
+  }
+
   .services__text {
     padding-top: 50px;
-    padding-bottom: 71px;
+    padding-bottom: 75px;
   }
 
   .services__link {
@@ -123,15 +130,13 @@
 
   .services__img {
     width: 100%;
-    height: 256px;
-    object-fit: cover;
   }
 }
 
 @media (max-width: $mobile-width) {
   .services__text {
     padding-top: 50px;
-    padding-bottom: 59px;
+    padding-bottom: 66px;
   }
 
   .services__caption {
@@ -143,12 +148,16 @@
   }
 
   .services__item {
-    margin-bottom: 23px;
+    margin-bottom: 30px;
   }
 
   .services__title {
-    top: 25px;
+    top: 21px;
     left: 33px;
     width: 60%;
+  }
+
+  .services__title--component {
+    top: 31px;
   }
 }

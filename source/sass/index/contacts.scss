@@ -15,6 +15,10 @@
   margin: 0;
   font-size: 15px;
   line-height: 25px;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  color: rgba(27, 45, 55, 0.5);
 }
 
 .contacts__wrapper a {
@@ -23,6 +27,15 @@
   line-height: 25px;
   text-decoration: none;
   color: rgba(27, 45, 55, 0.5);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $dodger-blue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: $tablet-width) {

@@ -22,15 +22,15 @@
     cursor: pointer;
   }
 
-  .accordion__btn--open {
-    background-image: url("../../img/minus.svg");
-  }
-
-  .accordion--closed .accordion__hidden {
+  .accordion .accordion__hidden {
     display: none;
   }
 
-  .accordion--opened .accordion__hidden{
+  .accordion--opened .accordion__hidden {
     display: block;
+  }
+
+  .accordion--opened .accordion__btn {
+    background-image: url("../../img/minus.svg");
   }
 }
