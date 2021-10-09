@@ -23,8 +23,8 @@
 .modal__close {
   @include btn-reset;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 16px;
+  right: 17px;
   width: 23px;
   height: 23px;
 
@@ -52,12 +52,19 @@
   }
 }
 
-.modal__title {
+.modal h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: $bg-white;
+  line-height: 50.63px;
   font-size: 28px;
   line-height: 39.28px;
 }
 
-.modal__wrapper {
+.feedback__form .modal__wrapper {
   width: 100%;
   margin: 0;
   margin-bottom: 30px;
@@ -75,7 +82,7 @@
   min-height: 104px;
 }
 
-.modal__description {
+.modal > p {
   width: 381px;
   margin-left: 0;
   margin-bottom: 33px;

@@ -70,7 +70,7 @@
         <a class="page-header__logo logo">
           <picture>
             <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-            <img class="page-header__img" width="202" height="52" src="img/logo.svg" alt="Логотип Service Device">
+            <img width="202" height="52" src="img/logo.svg" alt="Логотип Service Device">
           </picture>
         </a>
         <ul class="page-header__user-info user-info">
@@ -97,98 +97,102 @@
     <main class="page-main">
       <section class="page-main__main-screen main-screen">
         <div class="main-screen__container container">
-          <h1 class="main-screen__title">Печатные платы <span>производство и монтаж, поставка комплектующих, блоков и модулей</span></h1>
+          <h1>Печатные платы <span>производство и монтаж, поставка комплектующих, блоков и модулей</span></h1>
           <a href="#feedback-scroll" class="main-screen__btn button">
-            <span class="main-screen__btn-text main-screen__btn-text--desctop">Получить бесплатную консультацию</span>
-            <span class="main-screen__btn-text main-screen__btn-text--mobile">Бесплатная консультация</span>
+            <span>Получить бесплатную консультацию</span>
+            <span>Бесплатная консультация</span>
           </a>
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcset="img/printed-circuit-mobile@1x.webp, img/printed-circuit-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/printed-circuit-lap@1x.webp, img/printed-circuit-lap@2x.webp 2x">
             <source type="image/webp" srcset="img/printed-circuit@1x.webp, img/printed-circuit@2x.webp 2x">
 
-            <img class="main-screen__img" src="img/printed-circuit@1x.png" srcset="img/printed-circuit@2x.png 2x" alt="Печатная плата" width="705" height="515">
+            <!-- 1х: 705px; 2x: 1410px -->
+            <img src="img/printed-circuit@1x.png" srcset="img/printed-circuit@2x.png 2x" alt="Печатная плата" width="705" height="515">
           </picture>
         </div>
       </section>
-      <section class="page-main__advantage advantage container container-narrow">
+      <section class="page-main__advantage advantage container container--narrow">
         <h2 class="visually-hidden">Преимущества компании</h2>
         <ul class="advantage__list">
           <li class="advantage__item advantage__item--timing">
             <svg width="29" height="35" fill="#00B2FF">
               <use xlink:href="#icon-advantages-stopwatch"></use>
             </svg>
-            <h3 class="advantage__title">Оперативные сроки</h3>
-            <p class="advantage__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+            <h3>Оперативные сроки</h3>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
           <li class="advantage__item advantage__item--supplier">
             <svg width="35" height="35" fill="#00B2FF">
               <use xlink:href="#icon-advantages-hired"></use>
             </svg>
-            <h3 class="advantage__title">Крупные поставщики</h3>
-            <p class="advantage__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+            <h3>Крупные поставщики</h3>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
           </li>
           <li class="advantage__item advantage__item--confidentiality">
             <svg width="36" height="31" fill="#00B2FF">
               <use xlink:href="#icon-advantages-detective"></use>
             </svg>
-            <h3 class="advantage__title">Полная конфиденциальность</h3>
-            <p class="advantage__description">По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
+            <h3>Полная конфиденциальность</h3>
+            <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
           </li>
           <li class="advantage__item advantage__item--price">
             <svg width="35" height="35" fill="#00B2FF">
               <use xlink:href="#icon-advantages-tag"></use>
             </svg>
-            <h3 class="advantage__title">Персонализация стоимости</h3>
-            <p class="advantage__description">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+            <h3>Персонализация стоимости</h3>
+            <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
           </li>
         </ul>
       </section>
-      <section class="page-main__about-company about-company container container-narrow">
-        <h2 class="about-company__title">О компании</h2>
+      <section class="page-main__about-company about-company container container--narrow">
+        <h2>О компании</h2>
         <div class="about-company__wrapper-text">
-          <p class="about-company__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p class="about-company__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about-company__description-change">..</span> <span class="about-company__description-hide">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about-company__description-change">..</span><span class="about-company__description-hide">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
         </div>
         <a href="#" class="about-company__btn button">Подробнее</a>
       </section>
       <section class="page-main__services services">
-        <div class="services__text  container container-narrow">
-          <h2 class="services__caption">Service Device предлагает следующие товары и услуги</h2>
+        <div class="services__text container container--narrow">
+          <h2>Service Device предлагает следующие товары и услуги</h2>
           <ul class="services__list">
             <li class="services__item">
-              <a href="#" class="services__link">
-                <h3 class="services__title services__title--production">Производство печатных плат</h3>
+              <a href="#" class="services__link services__link--production">
+                <h3>Производство печатных плат</h3>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/service-production-mobile@1x.webp, img/service-production-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/service-production-lap@1x.webp, img/service-production-lap@2x.webp 2x">
                   <source type="image/webp" srcset="img/service-production-desctop@1x.webp, img/service-production-desctop@2x.webp 2x">
 
-                  <img class="services__img" src="img/service-production-desctop@1x.jpg" srcset="img/service-production-desctop@2x.jpg 2x" alt="Производство печатных плат" width="370" height="620">
+                  <!-- 1х: 370px; 2x: 740px -->
+                  <img src="img/service-production-desctop@1x.jpg" srcset="img/service-production-desctop@2x.jpg 2x" alt="Производство печатных плат" width="370" height="620">
                 </picture>
               </a>
             </li>
             <li class="services__item">
-              <a href="#" class="services__link">
-                <h3 class="services__title services__title--mounting">Монтаж печатных плат</h3>
+              <a href="#" class="services__link services__link--mounting">
+                <h3>Монтаж печатных плат</h3>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/service-mounting-mobile@1x.webp, img/service-mounting-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/service-mounting-lap@1x.webp, img/service-mounting-lap@2x.webp 2x">
                   <source type="image/webp" srcset="img/service-mounting-desctop@1x.webp, img/service-mounting-desctop@2x.webp 2x">
 
-                  <img class="services__img" src="img/service-mounting-desctop@1x.jpg" srcset="img/service-mounting-desctop@2x.jpg 2x" alt="Монтаж печатных плат" width="370" height="620">
+                  <!-- 1х: 370px; 2x: 740px -->
+                  <img src="img/service-mounting-desctop@1x.jpg" srcset="img/service-mounting-desctop@2x.jpg 2x" alt="Монтаж печатных плат" width="370" height="620">
                 </picture>
               </a>
             </li>
             <li class="services__item">
-              <a href="#" class="services__link">
-                <h3 class="services__title services__title--component">Комплектующие для светотехники</h3>
+              <a href="#" class="services__link services__link--component">
+                <h3>Комплектующие для светотехники</h3>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/service-component-mobile@1x.webp, img/service-component-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/service-component-lap@1x.webp, img/service-component-lap@2x.webp 2x">
                   <source type="image/webp" srcset="img/service-component-desctop@1x.webp, img/service-component-desctop@2x.webp 2x">
 
-                  <img class="services__img" src="img/service-component-desctop@1x.jpg" srcset="img/service-component-desctop@2x.jpg 2x" alt="Комплектующие для светотехники" width="370" height="620">
+                  <!-- 1х: 370px; 2x: 740px -->
+                  <img src="img/service-component-desctop@1x.jpg" srcset="img/service-component-desctop@2x.jpg 2x" alt="Комплектующие для светотехники" width="370" height="620">
                 </picture>
               </a>
             </li>
@@ -197,10 +201,10 @@
       </section>
       <section id="feedback-scroll" class="page-main__feedback feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <div class="feedback__wrapper container container-narrow">
+        <div class="feedback__wrapper container container--narrow">
           <div class="feedback__wrapper-text">
-            <h3 class="feedback__title">Остались вопросы? Задайте их нам!</h3>
-            <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
+            <h3>Остались вопросы? Задайте их нам!</h3>
+            <p>Мы проконсультируем Вас бесплатно</p>
             <form class="feedback__form" action="#" method="POST" autocomplete="off">
               <input type="text" name="name" placeholder="Имя" required="">
               <input type="tel" name="phone" placeholder="Телефон" minlength="15" maxlength="18" data-tel-input="" required="">
@@ -222,7 +226,7 @@
             <a class="page-footer__logo logo logo--footer">
               <img src="img/logo-footer.svg" alt="Логотип Service Device" width="216" height="52">
             </a>
-            <p class="page-footer__sd">1999-2018 SD Service Devices</p>
+            <p>1999-2018 SD Service Devices</p>
             <ul class="page-footer__social social">
               <li class="social__item">
                 <a href="#" class="social__link" aria-label="Фейсбук" target="_blank" rel="noopener">
@@ -247,10 +251,10 @@
               </li>
             </ul>
           </div>
-          <div class="page-footer__wrapper-site page-footer--nojs-accordion">
+          <div class="page-footer__wrapper-site page-footer__wrapper-site--no">
             <div class="page-footer__site-sections site-sections accordion">
-              <button class="accordion__btn" aria-label="кнопка открытия и закрытия"></button>
-              <h3 class="site-sections__title">Разделы сайта</h3>
+              <button type="button" class="accordion__btn" aria-label="кнопка открытия и закрытия"></button>
+              <h3>Разделы сайта</h3>
               <ul class="site-sections__list accordion__hidden">
                 <li class="site-sections__item">
                   <a href="#">О компании</a>
@@ -276,8 +280,8 @@
               </ul>
             </div>
             <div class="page-footer__contacts contacts accordion">
-              <button class="accordion__btn" aria-label="кнопка открытия и закрытия"></button>
-              <h3 class="contacts__title">Наш офис</h3>
+              <button type="button" class="accordion__btn" aria-label="кнопка открытия и закрытия"></button>
+              <h3>Наш офис</h3>
               <div class="contacts__wrapper accordion__hidden">
                 <p>г. Мытищи, Олимпийский проспект, д.10</p>
                 <a href="tel:+74955894050" class="contacts__telephone">+7 (495) 589-40-50</a>
@@ -288,17 +292,17 @@
           </div>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__item copyright__item--rights">Все права защищены</p>
-          <p class="copyright__item copyright__item--sd">1999-2018 SD Service Devices</p>
-          <p class="copyright__item copyright__item--confidentiality">Условия конфиденциальности</p>
-          <p class="copyright__item copyright__item--developed">Developed by wow studio</p>
+          <p>Все права защищены</p>
+          <p>1999-2018 SD Service Devices</p>
+          <p>Условия конфиденциальности</p>
+          <p>Developed by wow studio</p>
         </div>
       </div>
     </footer>
 
     <section class="modal feedback hidden">
-      <h2 class="modal__title feedback__title">Закажите звонок</h2>
-      <p class="modal__description feedback__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="feedback__form" action="#" method="POST" autocomplete="off">
         <p class="modal__wrapper">
           <input type="text" name="name" placeholder="Имя" autofocus="" required="">

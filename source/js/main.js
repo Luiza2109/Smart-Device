@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
 (function () {
   const button = document.querySelectorAll(".accordion__btn");
   const accordion = document.querySelectorAll(".accordion");
   const pageFooterAccordion = document.querySelector(".page-footer__wrapper-site");
 
-  pageFooterAccordion.classList.remove("page-footer--nojs-accordion");
+  pageFooterAccordion.classList.remove("page-footer__wrapper-site--nojs");
 
   var showPane = function (evt) {
     let target = evt.target;
@@ -29,7 +29,7 @@
   });
 })();
 
-'use strict';
+"use strict";
 
 (function () {
   const body = document.querySelector("body");
@@ -88,7 +88,7 @@
   });
 })();
 
-'use strict';
+"use strict";
 
 (function () {
   const form = document.querySelector(".feedback__form");
@@ -98,10 +98,8 @@
   const changeHandler = function () {
     if (this.type !== "checkbox") {
       localStorage.setItem(this.name, this.value);
-      console.log(this.name, this.value)
     } else {
       localStorage.setItem(this.name, this.checked);
-      console.log(this.name, this.checked)
     }
   };
 
@@ -134,13 +132,13 @@
   submitBtn.addEventListener("click", clearStorage);
 })();
 
-'use strict';
+"use strict";
 
 (function () {
   const phoneInputs = document.querySelectorAll("input[data-tel-input]");
 
   const getInputNumbersValue = function (input) {
-    return input.value.replace(/\D/g, '');
+    return input.value.replace(/\D/g, "");
   }
 
   const onPhonePaste = function (evt) {
@@ -181,16 +179,16 @@
       formattedInputValue = input.value = firstSymbols + " ";
 
       if (inputNumbersValue.length > 1) {
-        formattedInputValue += '(' + inputNumbersValue.substring(1, 4);
+        formattedInputValue += "(" + inputNumbersValue.substring(1, 4);
       }
       if (inputNumbersValue.length >= 5) {
-        formattedInputValue += ') ' + inputNumbersValue.substring(4, 7);
+        formattedInputValue += ") " + inputNumbersValue.substring(4, 7);
       }
       if (inputNumbersValue.length >= 8) {
-        formattedInputValue += '-' + inputNumbersValue.substring(7, 9);
+        formattedInputValue += "-" + inputNumbersValue.substring(7, 9);
       }
       if (inputNumbersValue.length >= 10) {
-        formattedInputValue += '-' + inputNumbersValue.substring(9, 11);
+        formattedInputValue += "-" + inputNumbersValue.substring(9, 11);
       }
     }
 
@@ -198,7 +196,7 @@
   }
 
   const onPhoneKeyDown = function (e) {
-    let inputValue = e.target.value.replace(/\D/g, '');
+    let inputValue = e.target.value.replace(/\D/g, "");
     if (e.keyCode == 8 && inputValue.length == 1) {
         e.target.value = "";
     }

@@ -18,10 +18,10 @@
   padding-top: 315px;
 }
 
-.main-screen__title {
+.main-screen__container h1 {
   width: 720px;
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 47px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   font-weight: 700;
@@ -31,11 +31,11 @@
   text-transform: uppercase;
 }
 
-.main-screen__btn-text--mobile {
+.main-screen__btn span:last-child {
   display: none;
 }
 
-.main-screen__title span {
+.main-screen__container h1 > span {
   position: relative;
   display: block;
   margin-top: 25px;
@@ -58,7 +58,7 @@
   }
 }
 
-.main-screen__img {
+.main-screen__container img {
   position: absolute;
   z-index: -1;
   top: 257px;
@@ -111,7 +111,7 @@
     background-repeat: no-repeat;
   }
 
-  .main-screen__img {
+  .main-screen__container img {
     width: 465px;
     height: 340px;
     top: 112px;
@@ -123,7 +123,7 @@
     }
   }
 
-  .main-screen__title {
+  .main-screen__container h1 {
     width: 470px;
     margin-bottom: 56px;
     font-size: 60px;
@@ -131,7 +131,7 @@
     letter-spacing: 4.3px;
   }
 
-  .main-screen__title span {
+  .main-screen__container h1 > span {
     margin-top: 28px;
     padding-left: 50px;
     font-size: 18px;
@@ -146,7 +146,7 @@
 
   .main-screen__btn {
     margin-left: 51px;
-    padding: 16px 32px;
+    padding: 17px 32px;
   }
 }
 
@@ -169,15 +169,15 @@
     background-repeat: no-repeat;
   }
 
-  .main-screen__title {
+  .main-screen__container h1 {
     width: 95%;
-    margin-bottom: 39px;
+    margin-bottom: 41px;
     font-size: 40px;
     line-height: 46.88px;
     letter-spacing: 2.7px;
   }
 
-  .main-screen__title span {
+  .main-screen__container h1 > span {
     font-size: 16px;
     line-height: 25.09px;
 
@@ -194,15 +194,15 @@
     font-size: 16px;
   }
 
-  .main-screen__btn-text--desctop {
+  .main-screen__btn span:first-child {
     display: none;
   }
 
-  .main-screen__btn-text--mobile {
+  .main-screen__btn span:last-child {
     display: block;
   }
 
-  .main-screen__img {
+  .main-screen__container img {
     width: 301px;
     height: 220px;
     top: 92px;

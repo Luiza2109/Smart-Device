@@ -5,6 +5,7 @@
 }
 
 html {
+  height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -17,6 +18,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  height: 100%;
 
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
@@ -59,13 +61,16 @@ img {
   }
 }
 
-.container-narrow {
+.container--narrow {
   max-width: 1250px;
 }
 
 .wrapper {
-  overflow: hidden;
-  min-height: 100%;
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .hidden {

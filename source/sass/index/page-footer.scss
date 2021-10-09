@@ -1,3 +1,7 @@
+.page-footer {
+  flex: 0 0 auto;
+}
+
 .page-footer__container {
   padding-top: 67px;
 }
@@ -6,7 +10,7 @@
   margin-right: 14.6%;
 }
 
-.page-footer__sd {
+.page-footer__info p {
   display: none;
   margin: 0;
   padding-top: 5px;
@@ -15,11 +19,6 @@
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.4px;
-}
-
-.page-footer__sd--bottom {
-  display: block;
-  padding: 0;
 }
 
 .page-footer__logo {
@@ -63,7 +62,7 @@
     padding-top: 18px;
   }
 
-  .page-footer__sd {
+  .page-footer__info p {
     display: block;
   }
 
@@ -106,7 +105,7 @@
     margin-bottom: 27px;
   }
 
-  .page-footer__sd {
+  .page-footer__info p {
     padding: 0;
     margin-bottom: 32px;
     text-align: center;
@@ -123,11 +122,11 @@
     margin: 0 auto;
   }
 
-  .page-footer--nojs-accordion .accordion__btn {
+  .page-footer__wrapper-site--nojs .accordion__btn {
     background-image: none;
   }
 
-  .page-footer--nojs-accordion .accordion__hidden {
+  .page-footer__wrapper-site--nojs .accordion__hidden {
     display: block;
   }
 }
