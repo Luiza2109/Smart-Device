@@ -64,13 +64,14 @@
   line-height: 39.28px;
 }
 
-.feedback__form .modal__wrapper {
+.feedback__form p {
   width: 100%;
   margin: 0;
   margin-bottom: 30px;
 }
 
-.modal__wrapper input {
+.feedback__form input[type="text"],
+.feedback__form input[type="tel"] {
   width: 100%;
   padding: 16px 23px;
 }
