@@ -70,8 +70,8 @@
   margin-bottom: 30px;
 }
 
-.feedback__form input[type="text"],
-.feedback__form input[type="tel"] {
+.modal__form input[type="text"],
+.modal__form input[type="tel"] {
   width: 100%;
   padding: 16px 23px;
 }
@@ -81,6 +81,7 @@
   padding: 16px 23px;
   margin-bottom: 31px;
   min-height: 104px;
+  max-height: 104px;
 }
 
 .modal > p {
@@ -97,6 +98,10 @@
   width: 90%;
   margin-top: 30px;
   padding-left: 50px;
+}
+
+.modal__filter-personal label {
+  padding-top: 5px;
 }
 
 .modal__filter-personal input[type="checkbox"] + label::before {

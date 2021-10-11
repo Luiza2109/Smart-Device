@@ -10,7 +10,7 @@
   flex-direction: row-reverse;
   align-items: center;
   padding-top: 92px;
-  padding-bottom: 111px;
+  padding-bottom: 114px;
 
   &::after,
   &::before {
@@ -97,11 +97,12 @@
 }
 
 .feedback__form textarea {
-  width: 100%;
+  min-width: 100%;
   padding: 14px 16px;
   margin-top: 41px;
   margin-bottom: 43px;
   min-height: 154px;
+  max-height: 154px;
   background-color: rgba(255, 255, 255, 0.1);
   color: $bg-white;
   border: 1px solid transparent;
@@ -138,7 +139,7 @@
 .feedback__filter-personal label {
   position: relative;
   display: block;
-  padding-top: 5px;
+  padding-top: 8px;
   font-size: 14px;
   line-height: 15.68px;
   color: $bg-white;
@@ -175,7 +176,7 @@
 @media (max-width: $tablet-width) {
   .feedback__wrapper {
     display: block;
-    padding: 80px 10.9% 104px 11.5%;
+    padding: 77px 10.9% 104px 11.5%;
 
     &::after,
     &::before  {
@@ -195,7 +196,7 @@
   }
 
   .feedback p {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
   }
 
   .feedback__form {
@@ -206,6 +207,7 @@
     margin-top: 43px;
     margin-bottom: 46px;
     min-height: 159px;
+    max-height: 159px;
   }
 
   .feedback__btn {
@@ -213,17 +215,27 @@
   }
 
   .feedback__filter-personal label {
-    padding-top: 7px;
+    padding-top: 9px;
   }
 
   .feedback__filter-personal {
     padding-left: 32px;
   }
+
+  .feedback input[type="checkbox"] + label::before {
+    left: -32px;
+    top: 10px;
+  }
+
+  .feedback input[type="checkbox"]:checked + label::after {
+    top: 15px;
+    left: -28px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .feedback__wrapper {
-    padding: 29px 5.2% 42px 5.2%;
+    padding: 30px 5.2% 44px 5.2%;
   }
 
   .feedback h3 {
@@ -247,10 +259,16 @@
     padding: 16px 16px;
   }
 
+  .feedback__filter-personal label {
+    padding-top: 6px;
+    padding-left: 3px;
+  }
+
   .feedback__form textarea {
     margin-top: 0;
     margin-bottom: 32px;
     min-height: 104px;
+    max-height: 104px;
   }
 
   .feedback__btn {
@@ -261,5 +279,15 @@
   .feedback__filter-personal {
     width: 86%;
     padding-left: 29px;
+  }
+
+  .feedback input[type="checkbox"] + label::before {
+    left: -30px;
+    top: 7px;
+  }
+
+  .feedback input[type="checkbox"]:checked + label::after {
+    top: 12px;
+    left: -26px;
   }
 }
