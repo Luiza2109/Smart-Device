@@ -1,14 +1,15 @@
 .main-screen {
   min-height: 878px;
   background-color: $gable-green;
-  background-image: url("../../img/bg-header-desctop@1px.png");
+  background-image: url("../img/bg-header-desctop@1px.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  overflow-x: hidden;
 
   @media(min-resolution: 1.5dppx),
         (min-resolution: 144dpi) {
-    background-image: url("../../img/bg-header-desctop@2px.png");
+    background-image: url("../img/bg-header-desctop@2px.png");
   }
 }
 
@@ -16,6 +17,7 @@
   position: relative;
   z-index: 1;
   padding-top: 315px;
+  padding-bottom: 50px;
 }
 
 .main-screen__container h1 {
@@ -63,12 +65,16 @@
   z-index: -1;
   top: 257px;
   left: 55.2%;
-  background-image: url(../../img/triangle-header.svg);
+  background-image: url(../img/triangle-header.svg);
   background-repeat: no-repeat;
   background-position: 12px 14px;
 
   @media (max-width: 1210px) {
     left: 62.2%;
+  }
+
+  @media (max-width: 1110px) {
+    left: 67.5%;
   }
 }
 
@@ -95,18 +101,18 @@
 @media (max-width: $tablet-width) {
   .main-screen {
     min-height: 686px;
-    background-image: url("../../img/bg-header-lap@1px.png");
+    background-image: url("../img/bg-header-lap@1px.png");
 
     @media(min-resolution: 1.5dppx),
         (min-resolution: 144dpi) {
-      background-image: url("../../img/bg-header-lap@2px.png");
+      background-image: url("../img/bg-header-lap@2px.png");
     }
   }
 
   .main-screen__container {
     padding-top: 188px;
     padding-left: 88px;
-    background-image: url(../../img/triangle-header-lap.svg);
+    background-image: url(../img/triangle-header-lap.svg);
     background-position: 100.4% 82px;
     background-repeat: no-repeat;
   }
@@ -153,18 +159,18 @@
 @media (max-width: $mobile-width) {
   .main-screen {
     min-height: 647px;
-    background-image: url("../../img/bg-header-mobile@1px.png");
+    background-image: url("../img/bg-header-mobile@1px.png");
 
     @media(min-resolution: 1.5dppx),
         (min-resolution: 144dpi) {
-      background-image: url("../../img/bg-header-mobile@2px.png");
+      background-image: url("../img/bg-header-mobile@2px.png");
     }
   }
 
   .main-screen__container {
     padding-top: 286px;
     padding-left: 5%;
-    background-image: url(../../img/triangle-header-mobile.svg);
+    background-image: url(../img/triangle-header-mobile.svg);
     background-position: 100.4% 69px;
     background-repeat: no-repeat;
   }

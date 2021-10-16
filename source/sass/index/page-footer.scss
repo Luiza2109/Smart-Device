@@ -28,7 +28,7 @@
 
 .page-footer__wrapper {
   display: flex;
-  padding-bottom: 57px;
+  padding-bottom: 58px;
 }
 
 .page-footer__wrapper-site {
@@ -92,12 +92,12 @@
   }
 
   .page-footer__wrapper {
-    padding-bottom: 23px;
+    padding-bottom: 0;
   }
 
   .page-footer__container {
     padding-top: 46px;
-    padding-bottom: 25px;
+    padding-bottom: 6px;
   }
 
   .page-footer__logo {
@@ -122,11 +122,15 @@
     margin: 0 auto;
   }
 
-  .page-footer__wrapper-site--nojs .accordion__btn {
+  .page-footer__wrapper-site--nojs .accordion__container::before {
     background-image: none;
   }
 
   .page-footer__wrapper-site--nojs .accordion__hidden {
     display: block;
+  }
+
+  .page-footer__wrapper-site--nojs .accordion__wrapper {
+    cursor: default;
   }
 }

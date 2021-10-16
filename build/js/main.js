@@ -1,7 +1,7 @@
 "use strict";
 
 (function () {
-  const button = document.querySelectorAll(".accordion__btn");
+  const button = document.querySelectorAll(".accordion__wrapper");
   const accordion = document.querySelectorAll(".accordion");
   const pageFooterAccordion = document.querySelector(".page-footer__wrapper-site");
 
@@ -37,6 +37,7 @@
   const modal = document.querySelector(".modal");
   const modalClose = modal.querySelector(".modal__close");
   const modalPlug = document.querySelector(".modal-plug");
+  const modalPlugWrapper = document.querySelector(".modal-plug__wrapper");
   const inputName = modal.querySelector("input[name='name']");
 
   const onPopupEscPress = function (evt) {
@@ -47,7 +48,6 @@
   };
 
   const openPopup = function () {
-    modal.classList.remove("hidden");
     modalPlug.classList.remove("hidden");
     body.classList.add("modal-open");
     inputName.focus();
@@ -56,7 +56,6 @@
   };
 
   const closePopup = function () {
-    modal.classList.add("hidden");
     modalPlug.classList.add("hidden");
     body.classList.remove("modal-open");
 
@@ -83,8 +82,12 @@
     }
   });
 
-  modalPlug.addEventListener("click", function () {
-    closePopup();
+  modalPlug.addEventListener("click", function (evt) {
+    let target = evt.target;
+
+    if(target === modalPlugWrapper) {
+      closePopup();
+    }
   });
 })();
 

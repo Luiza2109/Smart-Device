@@ -4,22 +4,34 @@
 
 @media (max-width: $mobile-width) {
   .accordion {
-    position: relative;
     overflow-anchor: none;
   }
 
-  .accordion__btn {
-    @include btn-reset;
+  .accordion__wrapper {
     display: block;
-    position: absolute;
-    right: 0;
-    top: 29px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../../img/plus.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-left: -5.2%;
+    width: 100vw;
     cursor: pointer;
+  }
+
+  .accordion__container {
+    position: relative;
+    width: 100%;
+    padding: 0 4%;
+    margin-left: 0;
+    min-width: 320px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 5.2%;
+      top: 27px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/plus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .accordion .accordion__hidden {
@@ -30,7 +42,7 @@
     display: block;
   }
 
-  .accordion--opened .accordion__btn {
-    background-image: url("../../img/minus.svg");
+  .accordion--opened .accordion__container::before {
+    background-image: url("../img/minus.svg");
   }
 }

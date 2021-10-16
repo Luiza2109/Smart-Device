@@ -3,9 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   width: 430px;
   margin-left: auto;
+}
+
+.user-info__item {
+  margin-right: 20%;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .user-info__item a {

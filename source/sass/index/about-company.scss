@@ -1,5 +1,6 @@
 .about-company {
   position: relative;
+  z-index: 100;
   padding-left: 220px;
   padding-bottom: 40px;
 
@@ -10,13 +11,13 @@
     height: 317px;
     top: 5px;
     left: 11px;
-    background-image: url("../../img/2005@1x.png");
+    background-image: url("../img/2005@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
 
     @media(min-resolution: 1.5dppx),
           (min-resolution: 144dpi) {
-      background-image: url("../../img/2005@2x.png");
+      background-image: url("../img/2005@2x.png");
     }
   }
 }
@@ -72,15 +73,10 @@
     padding-left: 213px;
 
     &::before {
-      content: "";
-      position: absolute;
       width: 361px;
       height: 361px;
       top: 0;
       left: -9px;
-      background-image: url("../../img/2005@1x.png");
-      background-repeat: no-repeat;
-      background-size: contain;
     }
   }
 

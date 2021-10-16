@@ -1,23 +1,154 @@
+.modal-plug {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-plug__wrapper {
+  position: relative;
+  z-index: -1;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
 .modal {
-  position: fixed;
-  top: 136px;
-  left: 50%;
-  z-index: 1000;
+  position: relative;
+  z-index: 300;
   width: 490px;
-  height: 605px;
+  max-width: 100%;
+  min-height: 605px;
   padding: 30px 39px;
-  transform: translateX(-50%);
+  margin-bottom: 23px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.modal-plug {
-  position: fixed;
-  z-index: 500;
-  top: 0;
-  left: 0;
+.modal__close {
+  @include btn-reset;
+  position: absolute;
+  z-index: 300;
+  top: 16px;
+  right: 17px;
+  width: 23px;
+  height: 23px;
+
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+
+    width: 23px;
+    height: 1px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: $bg-white;
+  line-height: 50.63px;
+  font-size: 28px;
+  line-height: 39.28px;
+}
+
+.feedback__form p {
   width: 100%;
-  height: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.modal__form input[type="text"],
+.modal__form input[type="tel"] {
+  width: 100%;
+  padding: 16px 23px;
+}
+
+.modal textarea {
+  margin-top: 0;
+  padding: 16px 23px;
+  margin-bottom: 31px;
+  min-height: 104px;
+  max-height: 104px;
+}
+
+.modal > p {
+  width: 381px;
+  margin-left: 0;
+  margin-bottom: 33px;
+}
+
+.modal__btn {
+  width: 100%;
+}
+
+.modal__filter-personal {
+  width: 90%;
+  margin-top: 30px;
+  padding-left: 50px;
+}
+
+.modal__filter-personal label {
+  margin-top: 5px;
+  margin-right: 0;
+}
+
+.modal__filter-personal input[type="checkbox"] + label::before {
+  left: -50px;
+  top: 0;
+}
+
+
+/*.modal-plug {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  padding:30px 0;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  width: 490px;
+  max-width: 100%;
+  min-height: 605px;
+  padding: 30px 39px;
+  transform: translateX(-50%);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal__close {
@@ -101,15 +232,11 @@
 }
 
 .modal__filter-personal label {
-  padding-top: 5px;
+  margin-top: 5px;
+  margin-right: 0;
 }
 
 .modal__filter-personal input[type="checkbox"] + label::before {
   left: -50px;
-  top: 6px;
-}
-
-.modal__filter-personal input[type="checkbox"]:checked + label::after {
-  top: 11px;
-  left: -46px;
-}
+  top: 0;
+}*/

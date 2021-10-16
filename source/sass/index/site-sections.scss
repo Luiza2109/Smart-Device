@@ -19,7 +19,8 @@
 }
 
 .site-sections__item a {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   font-size: 15px;
   line-height: 25px;
   color: rgba(27, 45, 55, 0.5);
