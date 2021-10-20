@@ -115,17 +115,17 @@
 
   .services__link h3 {
     left: 45px;
-    top: 38px;
+    top: 40px;
     width: 24%;
   }
 
   .services__link--component h3 {
-    top: 48px;
+    top: 52px;
   }
 
   .services__text {
     padding-top: 50px;
-    padding-bottom: 34px;
+    padding-bottom: 35px;
   }
 
   .services__link {
@@ -141,7 +141,7 @@
 @media (max-width: $mobile-width) {
   .services__text {
     padding-top: 50px;
-    padding-bottom: 35px;
+    padding-bottom: 33px;
   }
 
   .services__text h2 {

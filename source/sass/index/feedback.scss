@@ -146,6 +146,7 @@
   line-height: 15.68px;
   color: $bg-white;
   user-select: none;
+  cursor: pointer;
 }
 
 .feedback input[type="checkbox"] + label::before {

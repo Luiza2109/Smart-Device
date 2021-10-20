@@ -51,6 +51,10 @@
     width: 82px;
   }
 
+  .user-info__item {
+    margin-right: 39%;
+  }
+
   .user-info__item svg {
     margin-right: 0;
   }
@@ -74,5 +78,9 @@
   .user-info {
     width: 71px;
     padding-bottom: 4px;
+  }
+
+  .user-info__item {
+    margin-right: 29.5%;
   }
 }
